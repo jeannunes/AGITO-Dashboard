@@ -1,0 +1,845 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-09-14 03:47+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Api/FoodsController.php:33
+msgid "Could not save the food record right now. Please, try again!"
+msgstr ""
+
+#: Controller/Api/GlycemiaController.php:38
+msgid "Could not sva e the glycemia record right now. Please, try again!"
+msgstr ""
+
+#: Controller/Api/MoodsController.php:32
+msgid "Could not save the mood record right now. Please, try again!"
+msgstr ""
+
+#: Controller/Api/UsersController.php:36
+msgid "Username not found"
+msgstr ""
+
+#: Controller/Api/UsersController.php:43
+msgid "Password mismatch"
+msgstr ""
+
+#: Controller/Api/UsersController.php:54
+msgid "Could not generate the access key right now. Please, try again!"
+msgstr ""
+
+#: Controller/Api/UsersController.php:80
+msgid "Could not add the user right now. Please, try again!"
+msgstr ""
+
+#: Controller/Dashboard/MonitorsController.php:43
+msgid "Incorrect password"
+msgstr ""
+
+#: Controller/Dashboard/MonitorsController.php:46
+msgid "Monitor not found!"
+msgstr ""
+
+#: Controller/Dashboard/QueriesController.php:26
+msgid "The query has been successfully added!"
+msgstr ""
+
+#: Controller/Dashboard/QueriesController.php:28
+msgid "The query could not be added this time. Please, try again!"
+msgstr ""
+
+#: Controller/Dashboard/UsersController.php:51
+msgid "{0} has been successfully added to the system. The password has been sent to its email."
+msgstr ""
+
+#: Controller/Dashboard/UsersController.php:54;58
+msgid "The user could not be added right now. Please, try again!"
+msgstr ""
+
+#: Controller/Dashboard/UsersController.php:80
+msgid "Your password has been updated!"
+msgstr ""
+
+#: Controller/Dashboard/UsersController.php:82
+msgid "Could not update your password now. Please, try again!"
+msgstr ""
+
+#: Controller/Dashboard/UsersController.php:86
+msgid "The password and password confirmation doesn't match!"
+msgstr ""
+
+#: Controller/Dashboard/UsersController.php:101
+msgid "A reset link has been sent to the user!"
+msgstr ""
+
+#: Controller/Dashboard/UsersController.php:103
+msgid "The reset link could not be sent this time. Please, try again!"
+msgstr ""
+
+#: Mailer/UserMailer.php:17
+msgid "AGITO Account"
+msgstr ""
+
+#: Mailer/UserMailer.php:29
+msgid "Password Reset"
+msgstr ""
+
+#: Mailer/UserMailer.php:40
+msgid "Password updated!"
+msgstr ""
+
+#: Template/Dashboard/Element/queries.ctp:4
+msgid "List"
+msgstr ""
+
+#: Template/Dashboard/Element/queries.ctp:5
+msgid "Create"
+msgstr ""
+
+#: Template/Dashboard/Layout/auth.ctp:17
+#: Template/Dashboard/Layout/dashboard.ctp:18
+msgid "AGITO"
+msgstr ""
+
+#: Template/Dashboard/Layout/auth.ctp:22
+#: Template/Dashboard/Monitors/login.ctp:23
+msgid "Login"
+msgstr ""
+
+#: Template/Dashboard/Layout/auth.ctp:25
+#: Template/Dashboard/Monitors/add.ctp:1
+msgid "Register"
+msgstr ""
+
+#: Template/Dashboard/Layout/dashboard.ctp:61
+#: Template/Dashboard/Monitors/add.ctp:9
+#: Template/Dashboard/Pages/index.ctp:1
+msgid "Dashboard"
+msgstr ""
+
+#: Template/Dashboard/Layout/dashboard.ctp:66
+#: Template/Dashboard/Users/index.ctp:1
+msgid "Users"
+msgstr ""
+
+#: Template/Dashboard/Layout/dashboard.ctp:121
+msgid "Logout"
+msgstr ""
+
+#: Template/Dashboard/Monitors/add.ctp:10
+msgid "If you have received an invitation link through e-mail, please, use the same e-mail to register."
+msgstr ""
+
+#: Template/Dashboard/Monitors/login.ctp:1;12
+msgid "Authentication"
+msgstr ""
+
+#: Template/Dashboard/Monitors/login.ctp:16
+msgid "Username"
+msgstr ""
+
+#: Template/Dashboard/Monitors/login.ctp:19
+msgid "Password"
+msgstr ""
+
+#: Template/Dashboard/Monitors/login.ctp:26
+msgid "Forgot you password ? "
+msgstr ""
+
+#: Template/Dashboard/Pages/index.ctp:45;66;87
+msgid "Date"
+msgstr ""
+
+#: Template/Dashboard/Pages/index.ctp:46;67;88;108
+#: Template/PublicApi/Layout/api.ctp:49
+msgid "User"
+msgstr ""
+
+#: Template/Dashboard/Pages/index.ctp:47
+msgid "Level"
+msgstr ""
+
+#: Template/Dashboard/Pages/index.ctp:68
+msgid "Mood"
+msgstr ""
+
+#: Template/Dashboard/Pages/index.ctp:89
+msgid "Food"
+msgstr ""
+
+#: Template/Dashboard/Pages/index.ctp:109
+msgid "Min"
+msgstr ""
+
+#: Template/Dashboard/Pages/index.ctp:110
+msgid "Media"
+msgstr ""
+
+#: Template/Dashboard/Pages/index.ctp:111
+msgid "Max"
+msgstr ""
+
+#: Template/Dashboard/Queries/add.ctp:1
+msgid "Add Query"
+msgstr ""
+
+#: Template/Dashboard/Queries/add.ctp:19
+#: Template/Dashboard/Users/add.ctp:24
+#: Template/Dashboard/Users/recover_password.ctp:23
+msgid "Save"
+msgstr ""
+
+#: Template/Dashboard/Queries/index.ctp:1
+msgid "Queries"
+msgstr ""
+
+#: Template/Dashboard/Queries/index.ctp:7
+msgid "ID"
+msgstr ""
+
+#: Template/Dashboard/Queries/index.ctp:8
+msgid "Title"
+msgstr ""
+
+#: Template/Dashboard/Queries/index.ctp:9
+msgid "Description"
+msgstr ""
+
+#: Template/Dashboard/Queries/index.ctp:10
+msgid "Creation Date"
+msgstr ""
+
+#: Template/Dashboard/Queries/index.ctp:11
+msgid "Last Update"
+msgstr ""
+
+#: Template/Dashboard/Users/add.ctp:1
+msgid "New User"
+msgstr ""
+
+#: Template/Dashboard/Users/add.ctp:19
+msgid "Gênero"
+msgstr ""
+
+#: Template/Dashboard/Users/add.ctp:20
+msgid "Male"
+msgstr ""
+
+#: Template/Dashboard/Users/add.ctp:20
+msgid "Female"
+msgstr ""
+
+#: Template/Dashboard/Users/index.ctp:7
+msgid "Name"
+msgstr ""
+
+#: Template/Dashboard/Users/index.ctp:8
+msgid "Birth Date"
+msgstr ""
+
+#: Template/Dashboard/Users/index.ctp:9
+msgid "Gender"
+msgstr ""
+
+#: Template/Dashboard/Users/index.ctp:10
+msgid "Last Login"
+msgstr ""
+
+#: Template/Dashboard/Users/index.ctp:11
+msgid "Actions"
+msgstr ""
+
+#: Template/Dashboard/Users/index.ctp:22
+#: Template/Dashboard/Users/recover_password.ctp:1;12
+msgid "Reset Password"
+msgstr ""
+
+#: Template/Element/contact.ctp:3
+msgid "We {0} new friends!"
+msgstr ""
+
+#: Template/Element/download.ctp:5
+msgid "Discover what all this buzz is about!"
+msgstr ""
+
+#: Template/Element/download.ctp:7
+msgid "Our app right now is available on any Android device for a closed group of testers. If you are part of it, download it from Google Play and start using it today!"
+msgstr ""
+
+#: Template/Element/features.ctp:4
+msgid "Limited Features, Unlimited Possibilities"
+msgstr ""
+
+#: Template/Element/features.ctp:5
+msgid "For now we're testing a few features but there's more to come. Check out what you can do with AGITO:"
+msgstr ""
+
+#: Template/Element/features.ctp:29
+msgid "Customize"
+msgstr ""
+
+#: Template/Element/features.ctp:31
+msgid "Make it your own way by changing hair styles and clothing."
+msgstr ""
+
+#: Template/Element/features.ctp:38
+msgid "Get notified"
+msgstr ""
+
+#: Template/Element/features.ctp:39
+msgid "We can remind you of testing your glycemia levels after your meals"
+msgstr ""
+
+#: Template/Element/features.ctp:47
+msgid "Personal Tips"
+msgstr ""
+
+#: Template/Element/features.ctp:48
+msgid "Through the gathering of information like your mood and what you had for your meals we can offer you custom tips to help you balance your glycemia levels."
+msgstr ""
+
+#: Template/Element/features.ctp:54
+msgid "Data Analysis"
+msgstr ""
+
+#: Template/Element/features.ctp:55
+msgid "With your information we can give you monthly reports about your health."
+msgstr ""
+
+#: Template/Element/footer.ctp:3
+msgid "{0} {1}. All Rights Reserved."
+msgstr ""
+
+#: Template/Element/footer.ctp:6
+msgid "Privacy"
+msgstr ""
+
+#: Template/Element/footer.ctp:9
+#: Template/Pages/faq.ctp:1
+msgid "FAQ"
+msgstr ""
+
+#: Template/Element/footer.ctp:12
+msgid "Language"
+msgstr ""
+
+#: Template/Element/footer.ctp:15
+msgid "PT"
+msgstr ""
+
+#: Template/Element/footer.ctp:18
+msgid "EN"
+msgstr ""
+
+#: Template/Element/header.ctp:7
+msgid "Helping kids and teens monitoring their diabetes is our mission."
+msgstr ""
+
+#: Template/Element/header.ctp:10
+msgid "Download for free"
+msgstr ""
+
+#: Template/Element/navbar.base.ctp:14
+#: Template/Element/navbar.ctp:14
+#: Template/Pages/resources.ctp:1
+msgid "Scientific Resources"
+msgstr ""
+
+#: Template/Element/navbar.ctp:17
+msgid "Download"
+msgstr ""
+
+#: Template/Element/navbar.ctp:20
+msgid "Features"
+msgstr ""
+
+#: Template/Element/navbar.ctp:23
+msgid "Contact"
+msgstr ""
+
+#: Template/Element/objectives.ctp:4
+#: Template/Pages/resources.ctp:8
+msgid "Behind the avatar"
+msgstr ""
+
+#: Template/Element/objectives.ctp:5
+#: Template/Pages/resources.ctp:9
+msgid "Get to know about the research behind the creation of AGITO."
+msgstr ""
+
+#: Template/Element/objectives.ctp:6
+msgid "Read the docs"
+msgstr ""
+
+#: Template/Element/Resources/members.ctp:6
+#: Template/Element/Resources/navbar.ctp:17
+msgid "Members"
+msgstr ""
+
+#: Template/Element/Resources/members.ctp:10
+msgid "Coordinator"
+msgstr ""
+
+#: Template/Element/Resources/members.ctp:17
+msgid "Researchers"
+msgstr ""
+
+#: Template/Element/Resources/members.ctp:20
+msgid "Scientific Initiation"
+msgstr ""
+
+#: Template/Element/Resources/members.ctp:27
+msgid "Collaborators"
+msgstr ""
+
+#: Template/Element/Resources/members.ctp:34
+msgid "Alumni"
+msgstr ""
+
+#: Template/Element/Resources/navbar.ctp:14
+#: Template/Element/Resources/objectives.ctp:6
+msgid "Objectives"
+msgstr ""
+
+#: Template/Element/Resources/navbar.ctp:20
+#: Template/Element/Resources/productions.ctp:6
+msgid "Scientific Productions"
+msgstr ""
+
+#: Template/Element/Resources/navbar.ctp:23
+#: Template/Element/Resources/resources.ctp:6
+msgid "Resources"
+msgstr ""
+
+#: Template/Element/Resources/navbar.ctp:26
+#: Template/Element/Resources/supporters.ctp:6
+msgid "Supporters"
+msgstr ""
+
+#: Template/Element/Resources/objectives.ctp:9
+msgid "In this research project, we propose the integration of a conversational interface with a personal assistant, allowing the interaction between the assistant and the user through natural spoken/written language. This will create what we call a Conversational Agent."
+msgstr ""
+
+#: Template/Element/Resources/productions.ctp:9
+msgid "No scientific productions from this research yet."
+msgstr ""
+
+#: Template/Element/Resources/resources.ctp:7
+msgid "This page contains some resources from AGITO. They can be used for research purpose only."
+msgstr ""
+
+#: Template/Element/Resources/resources.ctp:10
+msgid "No resources available yet."
+msgstr ""
+
+#: Template/Email/html/password_reseted.ctp:1
+#: Template/Email/html/reset_password.ctp:1
+#: Template/Email/html/welcome_mail.ctp:1
+msgid "Hi {0}!"
+msgstr ""
+
+#: Template/Email/html/password_reseted.ctp:2
+msgid "This message has been sent because your account has been updated and your password has been changed."
+msgstr ""
+
+#: Template/Email/html/password_reseted.ctp:3
+#: Template/Email/html/reset_password.ctp:5
+#: Template/Email/html/welcome_mail.ctp:17
+msgid "* this is an automated e-mail, please do not reply."
+msgstr ""
+
+#: Template/Email/html/reset_password.ctp:2
+msgid "This message has been sent because you requested your password to be reseted. Please, follow the link bellow to do this:"
+msgstr ""
+
+#: Template/Email/html/reset_password.ctp:4
+#: Template/Email/html/welcome_mail.ctp:8
+msgid "If nothing happens on click, please, copy the link and paste into your browser."
+msgstr ""
+
+#: Template/Email/html/welcome_mail.ctp:3
+msgid "You have been registered to Agito with the username {0}."
+msgstr ""
+
+#: Template/Email/html/welcome_mail.ctp:4
+msgid "To start using it, please, download the app from "
+msgstr ""
+
+#: Template/Email/html/welcome_mail.ctp:6
+msgid " Play Store and click the following link to set your password:"
+msgstr ""
+
+#: Template/Email/html/welcome_mail.ctp:11
+msgid "If you are part of the Alpha Testers Group, click the following link to accept the invitation:"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Layout/Email/html/default.ctp:44
+msgid "Brought to you by"
+msgstr ""
+
+#: Template/Layout/Email/html/default.ctp:53
+msgid "Google Play and its logo are trademarks from Google LLC."
+msgstr ""
+
+#: Template/Pages/faq.ctp:6
+msgid "Frequently Answered Questions"
+msgstr ""
+
+#: Template/Pages/faq.ctp:7
+msgid "Get some help here."
+msgstr ""
+
+#: Template/Pages/index.ctp:1
+msgid "HomePage"
+msgstr ""
+
+#: Template/Pages/privacy.ctp:1;6
+msgid "Privacy Policy"
+msgstr ""
+
+#: Template/Pages/privacy.ctp:7
+msgid "We care about your privacy."
+msgstr ""
+
+#: Template/Pages/privacy.ctp:16
+msgid "All your personal information gathered through the app will help us making a more productive and personalized experience."
+msgstr ""
+
+#: Template/Pages/privacy.ctp:17
+msgid "Guaranteeing your data confidentiality is very important for us."
+msgstr ""
+
+#: Template/Pages/privacy.ctp:18
+msgid "All personal informatin related to AGITO users will be treated in accordance to the brazilian law of Personal Data Protection from October 26, 1998. (Law #67/98)."
+msgstr ""
+
+#: Template/Pages/privacy.ctp:19
+msgid "Gathered information may include your full name, e-mail and glycemia, mood and feeding levels."
+msgstr ""
+
+#: Template/Pages/privacy.ctp:20
+msgid "Using AGITO means you accept and agree to our Privacy Policy. We preserve our right to updating it without previous notification. Therefore, we strongly recommend you to check this page regularly for recent changes to it."
+msgstr ""
+
+#: Template/PublicApi/Layout/api.ctp:46
+msgid "Info"
+msgstr ""
+
+#: Template/PublicApi/Layout/api.ctp:52
+msgid "Glucose"
+msgstr ""
+
+#: Template/PublicApi/Layout/api.ctp:68
+msgid "Check on this pages how to get data related to our app."
+msgstr ""
+
+#: Template/PublicApi/Layout/api.ctp:108
+msgid "User Data"
+msgstr ""
+
+#: View/Helper/PaginatorHelper.php:1212
+msgid "View"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:500
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:162
+#: Http/Middleware/CsrfProtectionMiddleware.php:191
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:166
+#: Http/Middleware/CsrfProtectionMiddleware.php:195
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:262
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:264
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2603
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2624
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:917
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:111
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:112
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:2054
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1099
+msgid "Edit {0}"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1101
+msgid "New {0}"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1988
+msgid "Submit"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:815
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""
+
