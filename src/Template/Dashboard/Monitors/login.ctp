@@ -1,4 +1,5 @@
 <?php $this->assign('title', __('Authentication')); ?>
+
     <div class="full-page login-page" data-color=""
          data-image="<?= $this->Url->image('489112.jpg'); ?>">
         <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
@@ -9,7 +10,7 @@
                         <?= $this->Form->create(); ?>
                         <div class="card" data-background="color" data-color="blue">
                             <div class="card-header">
-                                <h3 class="card-title"><?= __('Authentication'); ?></h3>
+                                <h3 class="card-title text-center"><?= __('Authentication'); ?></h3>
                             </div>
                             <div class="card-content">
                                 <div class="form-group">
@@ -22,8 +23,9 @@
                             <div class="card-footer text-center">
                                 <?= $this->Form->submit(__('Login'), ['class' => 'btn btn - fill btn - wd']) ?>
                                 <div class="forgot">
+                                    <br/>
                                     <p>
-                                        <?= $this->Html->link(__('Forgot you password ? '), ['controller' => 'Users', 'action' => 'forgot - password']); ?>
+                                        <?= $this->Html->link(__('Forgot you password ? '), ['controller' => 'Monitors', 'action' => 'forgotPassword'], ['class' => 'btn btn-simple btn-sm']); ?>
                                     </p>
                                 </div>
                             </div>
@@ -33,8 +35,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
 

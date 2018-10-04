@@ -69,6 +69,7 @@ Router::prefix('public_api', function (RouteBuilder $routes) {
 Router::prefix('dashboard', function (RouteBuilder $routes) {
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'index']);
     $routes->connect('/login', ['controller' => 'Monitors', 'action' => 'login']);
+    $routes->connect('/forgot-password', ['controller' => 'Monitors', 'action' => 'forgotPassword']);
     $routes->connect('/register', ['controller' => 'Monitors', 'action' => 'add']);
     $routes->fallbacks(DashedRoute::class);
 });
