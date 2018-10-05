@@ -13,6 +13,13 @@ use Cake\Utility\Text;
 
 class Query extends Entity
 {
+    public $_accessible = [
+        'id' => false,
+        '*' => true
+    ];
+
+    public $_hidden = ['id'];
+
     protected function _setSlug($value)
     {
         if (is_null($value))

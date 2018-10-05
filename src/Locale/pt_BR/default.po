@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-09-14 03:47+0000\n"
-"PO-Revision-Date: 2018-09-14 00:48-0300\n"
+"POT-Creation-Date: 2018-10-05 06:44+0000\n"
+"PO-Revision-Date: 2018-10-05 03:48-0300\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: pt_BR\n"
@@ -51,11 +51,15 @@ msgid "Could not add the user right now. Please, try again!"
 msgstr ""
 "Não foi possível adicionar o usuário agora. Por favor, tente novamente!"
 
-#: Controller/Dashboard/MonitorsController.php:43
+#: Controller/Dashboard/ApiController.php:39
+msgid "Method {0} does not exist"
+msgstr "O método {0} não existe"
+
+#: Controller/Dashboard/MonitorsController.php:34
 msgid "Incorrect password"
 msgstr "Senha incorreta"
 
-#: Controller/Dashboard/MonitorsController.php:46
+#: Controller/Dashboard/MonitorsController.php:37
 msgid "Monitor not found!"
 msgstr "Monitor não encontrado!"
 
@@ -130,7 +134,7 @@ msgid "AGITO"
 msgstr "AGITO"
 
 #: Template/Dashboard/Layout/auth.ctp:22
-#: Template/Dashboard/Monitors/login.ctp:23
+#: Template/Dashboard/Monitors/login.ctp:24
 msgid "Login"
 msgstr "Login"
 
@@ -160,54 +164,81 @@ msgstr ""
 "Se recebeu um convite por e-mail, por favor, utilize o mesmo e-mail para se "
 "cadastrar."
 
-#: Template/Dashboard/Monitors/login.ctp:1;12
+#: Template/Dashboard/Monitors/login.ctp:1;13
 msgid "Authentication"
 msgstr "Autenticação"
 
-#: Template/Dashboard/Monitors/login.ctp:16
+#: Template/Dashboard/Monitors/login.ctp:17
 msgid "Username"
 msgstr "Usuário"
 
-#: Template/Dashboard/Monitors/login.ctp:19
+#: Template/Dashboard/Monitors/login.ctp:20
 msgid "Password"
 msgstr "Senha"
 
-#: Template/Dashboard/Monitors/login.ctp:26
+#: Template/Dashboard/Monitors/login.ctp:28
 msgid "Forgot you password ? "
 msgstr "Esqueceu sua senha? "
 
-#: Template/Dashboard/Pages/index.ctp:45;66;87
+#: Template/Dashboard/Pages/index.ctp:3
+msgid "On the last day"
+msgstr "Em um dia"
+
+#: Template/Dashboard/Pages/index.ctp:8
+msgid "Glycemia Measurements"
+msgstr "Entradas de glicemia"
+
+#: Template/Dashboard/Pages/index.ctp:15
+msgid "Feeding Measurement"
+msgstr "Entradas de alimentação"
+
+#: Template/Dashboard/Pages/index.ctp:22
+msgid "Mood Measurements"
+msgstr "Entradas de humor"
+
+#: Template/Dashboard/Pages/index.ctp:29
+msgid "User Interactions"
+msgstr "Interações dos Usuários"
+
+#: Template/Dashboard/Pages/index.ctp:37
+msgid "Usage"
+msgstr "Uso"
+
+#: Template/Dashboard/Pages/index.ctp:42
+msgid "Low Glycemia Levels"
+msgstr "Glicemia Baixa"
+
+#: Template/Dashboard/Pages/index.ctp:44;54;64;77
 msgid "Date"
 msgstr "Data"
 
-#: Template/Dashboard/Pages/index.ctp:46;67;88;108
-#: Template/PublicApi/Layout/api.ctp:49
-msgid "User"
-msgstr "Usuário"
+#: Template/Dashboard/Pages/index.ctp:46;56;66
+msgid "Count"
+msgstr "Contagem"
 
-#: Template/Dashboard/Pages/index.ctp:47
-msgid "Level"
-msgstr "Nível"
+#: Template/Dashboard/Pages/index.ctp:52
+msgid "Normal Levels"
+msgstr "Níveis Normais"
 
-#: Template/Dashboard/Pages/index.ctp:68
-msgid "Mood"
-msgstr "Humor"
+#: Template/Dashboard/Pages/index.ctp:62
+msgid "High Glycemia Levels"
+msgstr "Níveis Altos"
 
-#: Template/Dashboard/Pages/index.ctp:89
-msgid "Food"
-msgstr "Alimento"
+#: Template/Dashboard/Pages/index.ctp:75
+msgid "Glycemia Leveling Through Time"
+msgstr "Variação de glicemia nos últimos meses"
 
-#: Template/Dashboard/Pages/index.ctp:109
-msgid "Min"
-msgstr "Mínimo"
+#: Template/Dashboard/Pages/index.ctp:79
+msgid "Low"
+msgstr "Baixo"
 
-#: Template/Dashboard/Pages/index.ctp:110
-msgid "Media"
-msgstr "Média"
+#: Template/Dashboard/Pages/index.ctp:79
+msgid "Normal"
+msgstr "Normal"
 
-#: Template/Dashboard/Pages/index.ctp:111
-msgid "Max"
-msgstr "Máximo"
+#: Template/Dashboard/Pages/index.ctp:79
+msgid "High"
+msgstr "Alto"
 
 #: Template/Dashboard/Queries/add.ctp:1
 msgid "Add Query"
@@ -629,6 +660,10 @@ msgstr ""
 msgid "Info"
 msgstr "Informações"
 
+#: Template/PublicApi/Layout/api.ctp:49
+msgid "User"
+msgstr "Usuário"
+
 #: Template/PublicApi/Layout/api.ctp:52
 msgid "Glucose"
 msgstr "Glicose"
@@ -926,6 +961,24 @@ msgstr "Novembro"
 #: View/Widget/DateTimeWidget.php:551
 msgid "December"
 msgstr "Dezembro"
+
+#~ msgid "Level"
+#~ msgstr "Nível"
+
+#~ msgid "Mood"
+#~ msgstr "Humor"
+
+#~ msgid "Food"
+#~ msgstr "Alimento"
+
+#~ msgid "Min"
+#~ msgstr "Mínimo"
+
+#~ msgid "Media"
+#~ msgstr "Média"
+
+#~ msgid "Max"
+#~ msgstr "Máximo"
 
 #~ msgid ""
 #~ "You have been registered to Agito with the username {0}. To start using "
