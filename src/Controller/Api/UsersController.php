@@ -57,9 +57,9 @@ class UsersController extends ApiController
 
         // Returns user data and api_key
         $this->set([
-            'user' => $user
+            'user' => $user,
+            '_serialize' => 'user'
         ]);
-        $this->set('_serialize', ['user', 'api_key']);
     }
 
     public function register()

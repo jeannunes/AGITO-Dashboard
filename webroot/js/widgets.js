@@ -2,35 +2,49 @@ function Widget() {
 
 }
 
-Widget.prototype.get = function (url, options) {
-    return fetch(url, options);
-}
-
-Widget.prototype.GraphQuery = function (wrapper_id, query_id, options) {
-
-    let wrapper = document.querySelector(wrapper_id);
-
-    let request = this.get(`/agito/dashboard/api/queries/execute/${query_id}`, {
-        body: JSON.stringify(options.data) || null
+Widget.get = function (url, data = []) {
+    'use strict';
+    return new Promise((resolve, reject) => {
+        fetch(url, {
+            body: JSON.stringify(data)
+        }).then(response => {
+            resolve(response.json());
+        }).catch(error => {
+            reject(error);
+        });
     });
+};
+
+Widget.executeQuery = function (query, data) {
+    'use strict';
+    return Widget.get(`/agito/dashboard/api/queries/execute/${query}`, data);
+};
+
+Widget.prototype.GraphQuery = function (wrapperId, queryId, options) {
+    'use strict';
+    let wrapper = document.querySelector(wrapperId);
+
+    let request = Widget.executeQuery(queryId, options.data);
 
     request.then(response => {
 
-        if (!response.ok)
+        if (!response.ok) {
             throw new Error('Could not fetch data');
+        }
 
-        let datasets = [];
+        response.then(data => {
 
-        response.json().then(data => {
-
-            if (!Array.isArray(options.value))
+            if (!Array.isArray(options.value)) {
                 options.value = [options.value];
+            }
 
-            if (!Array.isArray(options.y_label))
+            if (!Array.isArray(options.y_label)) {
                 options.y_label = [options.y_label];
+            }
 
-            if (!Array.isArray(options.color))
+            if (!Array.isArray(options.color)) {
                 options.color = [options.color];
+            }
 
             let datasets = [];
 
@@ -43,14 +57,15 @@ Widget.prototype.GraphQuery = function (wrapper_id, query_id, options) {
                     borderColor: options.color[index],
                     fill: false,
                     data: data.map((row) => {
-                        if (labels.length < data.length)
+                        if (labels.length < data.length) {
                             labels.push(row[options.label]);
+                        }
                         return row[value];
                     })
                 });
             });
 
-            let wrapper = document.querySelector(`${wrapper_id}_canvas`),
+            let wrapper = document.querySelector(`${wrapperId}_canvas`),
                 ctx = wrapper.getContext('2d');
 
             new Chart(ctx, {
@@ -80,24 +95,18 @@ Widget.prototype.GraphQuery = function (wrapper_id, query_id, options) {
     });
 }
 
-Widget.prototype.Indicator = function (wrapper_id, query_id, options) {
+Widget.prototype.Indicator = function (wrapperId, queryId, options) {
+    'use strict';
 
-    let request = this.get(`/agito/dashboard/api/queries/execute/${query_id}`);
+    let request = Widget.executeQuery(queryId);
 
-    let wrapper = document.querySelector(`${wrapper_id}_text`);
+    let wrapper = document.querySelector(`${wrapperId}_text`);
 
     request.then(response => {
-
-        if (!response.ok)
-            throw new Error('Could not load data');
-
-        response.json().then(rows => {
-            wrapper.innerHTML = rows[0][options.key];
-        });
-
+        wrapper.innerHTML = response[0][options.key];
     }).catch(error => {
         wrapper.innerHTML = error;
     });
-}
+};
 
 let widget = new Widget();

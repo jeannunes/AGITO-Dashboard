@@ -5,6 +5,8 @@
             <thead>
             <tr>
                 <th><?= __('Name') ?></th>
+                <th><?= __('E-mail'); ?></th>
+                <th><?= __('Username'); ?></th>
                 <th><?= __('Birth Date') ?></th>
                 <th><?= __('Gender') ?></th>
                 <th><?= __('Last Login') ?></th>
@@ -15,6 +17,8 @@
             <?php foreach ($users as $user): ?>
                 <tr>
                     <td><?= $user->full_name ?></td>
+                    <td><?= $user->email ?></td>
+                    <td><?= $user->username ?></td>
                     <td><?= $user->birth_date ?></td>
                     <td><?= $user->gender_identity ?></td>
                     <td><?= $user->last_login ?></td>

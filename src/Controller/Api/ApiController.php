@@ -8,7 +8,6 @@
 
 namespace App\Controller\Api;
 
-
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\Network\Exception\UnauthorizedException;
@@ -29,8 +28,8 @@ class ApiController extends Controller
             'storage' => 'Memory',
             'unauthorizedRedirect' => false
         ]);
-        if ($this->request->getParam('controller') == 'users' && $this->request->getParam('action') == 'login') {
-        } else {
+
+        if (($this->request->getParam('controller') != 'Users' && $this->request->getParam('action') != 'login')) {
             $this->loadModel('Users');
             $user = $this->Users->find()->where([
                 'username' => $this->request->getData('username'),
@@ -48,5 +47,11 @@ class ApiController extends Controller
         if (!$this->request->getParam('_ext'))
             return $this->redirect(['_ext' => 'json']);
         return parent::beforeFilter($event);
+    }
+
+    public function beforeRender(Event $event)
+    {
+        $this->RequestHandler->renderAs($this, 'json');
+        return parent::beforeRender($event);
     }
 }

@@ -19,7 +19,7 @@ class User extends Entity
         'id' => false
     ];
     public $_hidden = [
-        'password', 'api_key'
+        'password', 'api_key', 'reset_token'
     ];
 
     public $_virtual = ['full_name', 'first_name', 'last_name'];
@@ -38,8 +38,9 @@ class User extends Entity
 
     protected function _getLastName()
     {
-        $temp = explode(' ', $this->_properties['name'], 1);
-        return isset($temp[1]) ? $temp[1] : null;
+        $temp = explode(' ', $this->_properties['name']);
+        array_shift($temp);
+        return join(" ", $temp);
     }
 
     protected function _setPassword($value)
