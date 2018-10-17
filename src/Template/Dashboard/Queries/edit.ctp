@@ -1,20 +1,23 @@
-<?php $this->assign('title', __('Add Query')); ?>
+<?php $this->assign('title', __('Edit Query')); ?>
 <?= $this->Form->create($query); ?>
 <div class="card">
     <div class="card-content">
         <div class="row">
-            <div class="col-sm-12 col-md-3 form-group">
-                <?= $this->Form->control('slug', ['class' => 'form-control']); ?>
-            </div>
-            <div class="col-sm-12 col-md-9 form-group">
+            <div class="col-sm-12 form-group">
                 <?= $this->Form->control('title', ['class' => 'form-control']); ?>
             </div>
             <div class="col-sm-12 form-group">
                 <label for="query"><?= __('Query'); ?></label>
                 <?= $this->Form->textarea('query', ['class' => 'form-control']); ?>
             </div>
-            <div class="col-sm-12 form-group">
-                <?= $this->Form->submit(__('Save'), ['class' => 'btn btn-primary btn-fill']); ?>
+            <div class="col-sm-12">
+                <div class="btn-group">
+                    <?= $this->Form->button(__('Save'), ['type' => 'submit', 'class' => 'btn btn-primary btn-fill']); ?>
+                    <?= $this->Html->link(__('Remove'), ['action' => 'remove', $query->slug], ['class' => 'btn btn-danger btn-fill']); ?>
+                </div>
+                <small>
+                    <?= __('Last modified by {0} on {1}', [$query->monitor->username, $query->last_modification_date]); ?>
+                </small>
             </div>
         </div>
     </div>

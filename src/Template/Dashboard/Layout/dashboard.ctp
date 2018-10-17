@@ -18,44 +18,6 @@
             <?= $this->Html->link(__('AGITO'), ['controller' => 'Pages', 'action' => 'index'], ['class' => 'simple-text logo-normal']); ?>
         </div>
         <div class="sidebar-wrapper">
-            <div class="user">
-                <!-- <div class="photo">
-                    <img src="../assets/img/faces/face-2.jpg"/>
-                </div> -->
-                <div class="info">
-                    <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-	                        <span>
-								<?= $_user->username; ?>
-                                <!-- <b class="caret"></b> -->
-							</span>
-                    </a>
-                    <div class="clearfix"></div>
-
-                    <!-- <div class="collapse" id="collapseExample">
-                        <ul class="nav">
-                            <li>
-                                <a href="#profile">
-                                    <span class="sidebar-mini">Mp</span>
-                                    <span class="sidebar-normal">My Profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#edit">
-                                    <span class="sidebar-mini">Ep</span>
-                                    <span class="sidebar-normal">Edit Profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#settings">
-                                    <span class="sidebar-mini">S</span>
-                                    <span class="sidebar-normal">Settings</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    -->
-                </div>
-            </div>
             <ul class="nav">
                 <li>
                     <?= $this->Html->link('<i class="ti-panel"></i><p>' . __('Dashboard') . '</p>', [
@@ -63,8 +25,18 @@
                     ], ['escape' => false]); ?>
                 </li>
                 <li>
+                    <?= $this->Html->link('<i class="ti-pie-chart"></i><p>' . __('Queries') . '</p>', [
+                        'controller' => 'Queries', 'action' => 'index'
+                    ], ['escape' => false]); ?>
+                </li>
+                <li>
                     <?= $this->Html->link('<i class="ti-user"></i><p>' . __('Users') . '</p>', [
                         'controller' => 'Users', 'action' => 'index'
+                    ], ['escape' => false]); ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('<i class="ti-user"></i><p>' . __('Monitors') . '</p>', [
+                        'controller' => 'Monitors', 'action' => 'index'
                     ], ['escape' => false]); ?>
                 </li>
             </ul>
@@ -129,16 +101,17 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <?php
+                    <?= $this->Flash->render(); ?>
 
-                    echo $this->Flash->render();
-
-                    try {
-                        $file = $this->request->getParam('controller');
-                        echo $this->element($file);
-                    } catch (\Exception $ignore) {
-                    }
-                    ?>
+                    <p>
+                        <?php
+                        try {
+                            $file = $this->request->getParam('controller');
+                            echo $this->element($file);
+                        } catch (\Exception $ignore) {
+                        }
+                        ?>
+                    </p>
 
                     <?= $this->fetch('content'); ?>
 

@@ -13,11 +13,12 @@ class QueriesTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
+        $this->belongsTo('Monitors')->setForeignKey('last_modification_user');
     }
 
     public function validationDefault(Validator $validator)
     {
-        $validator->requirePresence('slug');
+        $validator->notEmpty('slug');
         $validator->requirePresence('title');
         $validator->requirePresence('query');
         return $validator;

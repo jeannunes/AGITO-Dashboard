@@ -23,6 +23,12 @@ class ApiController extends DashboardController
         parent::initialize();
     }
 
+    public function beforeFilter(Event $event)
+    {
+        $this->Security->setConfig('unlockedActions', ['queries']);
+        return parent::beforeFilter($event);
+    }
+
     public function beforeRender(Event $event)
     {
         $this->RequestHandler->renderAs($this, 'json');

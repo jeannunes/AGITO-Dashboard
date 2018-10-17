@@ -1,7 +1,5 @@
 <?php $this->assign('title', __('Dashboard')); ?>
 
-    <h3 class="page-title"><?= __('On the last day'); ?></h3>
-
     <div class="row">
 
         <div class="col-xs-12 col-sm-3">
@@ -33,8 +31,6 @@
         </div>
 
     </div>
-
-    <h3 class="page-title"><?= __('Usage'); ?></h3>
 
     <div class="row">
 

@@ -3,7 +3,7 @@
         <p>&copy; <?= __('{0} {1}. All Rights Reserved.', ['AGITO', 2018]); ?></p>
         <ul class="list-inline">
             <li class="list-inline-item">
-                <?= $this->Html->link(__('Privacy'), ['controller' => 'Pages', 'action' => 'view', 'privacy']); ?>
+                <?= $this->Html->link(__('Privacy Policy'), ['controller' => 'Pages', 'action' => 'view', 'privacy-policy']); ?>
             </li>
             <li class="list-inline-item">
                 <?= $this->Html->link(__('FAQ'), ['controller' => 'Pages', 'action' => 'view', 'faq']); ?>

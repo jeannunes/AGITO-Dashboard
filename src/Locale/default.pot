@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-10-05 06:44+0000\n"
+"POT-Creation-Date: 2018-10-12 16:42+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -54,12 +54,20 @@ msgstr ""
 msgid "Monitor not found!"
 msgstr ""
 
-#: Controller/Dashboard/QueriesController.php:26
+#: Controller/Dashboard/QueriesController.php:28
 msgid "The query has been successfully added!"
 msgstr ""
 
-#: Controller/Dashboard/QueriesController.php:28
+#: Controller/Dashboard/QueriesController.php:30
 msgid "The query could not be added this time. Please, try again!"
+msgstr ""
+
+#: Controller/Dashboard/QueriesController.php:51
+msgid "The query has been successfully updated!"
+msgstr ""
+
+#: Controller/Dashboard/QueriesController.php:54
+msgid "The query could not be updated this time. Please, try again!"
 msgstr ""
 
 #: Controller/Dashboard/UsersController.php:51
@@ -125,18 +133,27 @@ msgstr ""
 msgid "Register"
 msgstr ""
 
-#: Template/Dashboard/Layout/dashboard.ctp:61
+#: Template/Dashboard/Layout/dashboard.ctp:23
 #: Template/Dashboard/Monitors/add.ctp:9
 #: Template/Dashboard/Pages/index.ctp:1
 msgid "Dashboard"
 msgstr ""
 
-#: Template/Dashboard/Layout/dashboard.ctp:66
+#: Template/Dashboard/Layout/dashboard.ctp:28
+#: Template/Dashboard/Queries/index.ctp:1
+msgid "Queries"
+msgstr ""
+
+#: Template/Dashboard/Layout/dashboard.ctp:33
 #: Template/Dashboard/Users/index.ctp:1
 msgid "Users"
 msgstr ""
 
-#: Template/Dashboard/Layout/dashboard.ctp:121
+#: Template/Dashboard/Layout/dashboard.ctp:38
+msgid "Monitors"
+msgstr ""
+
+#: Template/Dashboard/Layout/dashboard.ctp:93
 msgid "Logout"
 msgstr ""
 
@@ -149,6 +166,7 @@ msgid "Authentication"
 msgstr ""
 
 #: Template/Dashboard/Monitors/login.ctp:17
+#: Template/Dashboard/Users/index.ctp:8
 msgid "Username"
 msgstr ""
 
@@ -160,63 +178,55 @@ msgstr ""
 msgid "Forgot you password ? "
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:3
-msgid "On the last day"
-msgstr ""
-
-#: Template/Dashboard/Pages/index.ctp:8
+#: Template/Dashboard/Pages/index.ctp:6
 msgid "Glycemia Measurements"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:15
+#: Template/Dashboard/Pages/index.ctp:13
 msgid "Feeding Measurement"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:22
+#: Template/Dashboard/Pages/index.ctp:20
 msgid "Mood Measurements"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:29
+#: Template/Dashboard/Pages/index.ctp:27
 msgid "User Interactions"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:37
-msgid "Usage"
-msgstr ""
-
-#: Template/Dashboard/Pages/index.ctp:42
+#: Template/Dashboard/Pages/index.ctp:38
 msgid "Low Glycemia Levels"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:44;54;64;77
+#: Template/Dashboard/Pages/index.ctp:40;50;60;73
 msgid "Date"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:46;56;66
+#: Template/Dashboard/Pages/index.ctp:42;52;62
 msgid "Count"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:52
+#: Template/Dashboard/Pages/index.ctp:48
 msgid "Normal Levels"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:62
+#: Template/Dashboard/Pages/index.ctp:58
 msgid "High Glycemia Levels"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:75
+#: Template/Dashboard/Pages/index.ctp:71
 msgid "Glycemia Leveling Through Time"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:79
+#: Template/Dashboard/Pages/index.ctp:75
 msgid "Low"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:79
+#: Template/Dashboard/Pages/index.ctp:75
 msgid "Normal"
 msgstr ""
 
-#: Template/Dashboard/Pages/index.ctp:79
+#: Template/Dashboard/Pages/index.ctp:75
 msgid "High"
 msgstr ""
 
@@ -224,34 +234,50 @@ msgstr ""
 msgid "Add Query"
 msgstr ""
 
-#: Template/Dashboard/Queries/add.ctp:19
+#: Template/Dashboard/Queries/add.ctp:13
+#: Template/Dashboard/Queries/edit.ctp:10
+msgid "Query"
+msgstr ""
+
+#: Template/Dashboard/Queries/add.ctp:17
+#: Template/Dashboard/Queries/edit.ctp:15
 #: Template/Dashboard/Users/add.ctp:24
 #: Template/Dashboard/Users/recover_password.ctp:23
 msgid "Save"
 msgstr ""
 
-#: Template/Dashboard/Queries/index.ctp:1
-msgid "Queries"
+#: Template/Dashboard/Queries/edit.ctp:1
+msgid "Edit Query"
+msgstr ""
+
+#: Template/Dashboard/Queries/edit.ctp:16
+#: Template/Dashboard/Queries/index.ctp:26
+msgid "Remove"
+msgstr ""
+
+#: Template/Dashboard/Queries/edit.ctp:19
+msgid "Last modified by {0} on {1}"
 msgstr ""
 
 #: Template/Dashboard/Queries/index.ctp:7
-msgid "ID"
-msgstr ""
-
-#: Template/Dashboard/Queries/index.ctp:8
 msgid "Title"
 msgstr ""
 
-#: Template/Dashboard/Queries/index.ctp:9
-msgid "Description"
-msgstr ""
-
-#: Template/Dashboard/Queries/index.ctp:10
+#: Template/Dashboard/Queries/index.ctp:8
 msgid "Creation Date"
 msgstr ""
 
-#: Template/Dashboard/Queries/index.ctp:11
-msgid "Last Update"
+#: Template/Dashboard/Queries/index.ctp:9
+#: Template/Dashboard/Users/index.ctp:10
+msgid "Actions"
+msgstr ""
+
+#: Template/Dashboard/Queries/index.ctp:23
+msgid "Run"
+msgstr ""
+
+#: Template/Dashboard/Queries/index.ctp:25
+msgid "Edit"
 msgstr ""
 
 #: Template/Dashboard/Users/add.ctp:1
@@ -274,23 +300,11 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: Template/Dashboard/Users/index.ctp:8
-msgid "Birth Date"
-msgstr ""
-
 #: Template/Dashboard/Users/index.ctp:9
-msgid "Gender"
-msgstr ""
-
-#: Template/Dashboard/Users/index.ctp:10
 msgid "Last Login"
 msgstr ""
 
-#: Template/Dashboard/Users/index.ctp:11
-msgid "Actions"
-msgstr ""
-
-#: Template/Dashboard/Users/index.ctp:22
+#: Template/Dashboard/Users/index.ctp:21
 #: Template/Dashboard/Users/recover_password.ctp:1;12
 msgid "Reset Password"
 msgstr ""
@@ -352,7 +366,8 @@ msgid "{0} {1}. All Rights Reserved."
 msgstr ""
 
 #: Template/Element/footer.ctp:6
-msgid "Privacy"
+#: Template/Pages/privacy.ctp:1;6
+msgid "Privacy Policy"
 msgstr ""
 
 #: Template/Element/footer.ctp:9
@@ -542,10 +557,6 @@ msgstr ""
 
 #: Template/Pages/index.ctp:1
 msgid "HomePage"
-msgstr ""
-
-#: Template/Pages/privacy.ctp:1;6
-msgid "Privacy Policy"
 msgstr ""
 
 #: Template/Pages/privacy.ctp:7
