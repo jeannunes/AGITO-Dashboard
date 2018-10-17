@@ -1,6 +1,6 @@
 <?php $this->assign('title', __('Scientific Resources')); ?>
 
-<?= $this->element('resources/navbar'); ?>
+<?= $this->element('Resources/navbar'); ?>
 
 <section class="jumbo" style="background-image: url(<?= $this->Url->image('489112.jpg'); ?>);">
     <div class="jumbo-content">
@@ -12,15 +12,15 @@
     <div class="overlay"></div>
 </section>
 
-<?= $this->element('resources/objectives'); ?>
+<?= $this->element('Resources/objectives'); ?>
 
-<?= $this->element('resources/members'); ?>
+<?= $this->element('Resources/members'); ?>
 
-<?= $this->element('resources/productions'); ?>
+<?= $this->element('Resources/productions'); ?>
 
-<?= $this->element('resources/resources'); ?>
+<?= $this->element('Resources/resources'); ?>
 
-<?= $this->element('resources/supporters'); ?>
+<?= $this->element('Resources/supporters'); ?>
 
 <style>
     h3 {
