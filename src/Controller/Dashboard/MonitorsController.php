@@ -18,6 +18,7 @@ class MonitorsController extends DashboardController
 
     public function login()
     {
+
         $this->viewBuilder()->setLayout('auth');
 
         if ($this->request->is(['put', 'post'])) {
