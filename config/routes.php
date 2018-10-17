@@ -31,6 +31,7 @@ Router::prefix('dashboard', function (RouteBuilder $routes) {
 
 Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'view', 'index']);
+    $routes->connect('/update', ['controller' => 'Pages', 'action' => 'updateCode']);
     $routes->connect('/recover-password/**', ['prefix' => 'dashboard', 'controller' => 'Users', 'action' => 'recoverPassword'], ['_name' => 'recover_password']);
     $routes->connect('/*', ['controller' => 'Pages', 'action' => 'view']);
     $routes->fallbacks(DashedRoute::class);
