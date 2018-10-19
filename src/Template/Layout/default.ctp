@@ -3,6 +3,7 @@
 
 <head>
 
+    <!-- Remotelly updated -->
     <?= $this->element('head'); ?>
 
 </head>

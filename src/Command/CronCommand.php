@@ -32,6 +32,7 @@ class CronCommand extends Command
 
     public function execute(Arguments $args, ConsoleIo $io)
     {
+        $io->out("Deu certo!");
         $io->info("Iniciando a execução do script...");
         $cmd = $args->getArgument('cmd');
         if (strlen($cmd) > 0 && method_exists($this, $cmd)) {
