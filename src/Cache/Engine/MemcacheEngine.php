@@ -17,8 +17,20 @@ class MemcacheEngine extends CacheEngine
 
     public function init(array $config = [])
     {
+
+        if (!extension_loaded('memcache'))
+            return false;
+
+        $settings = array_merge([
+            'host' => 'localhost',
+            'port' => 11211
+        ], $config);
+
         $this->Memcache = new \Memcache;
-        $this->Memcache->connect('localhost', 11211) or die ("Could not connect");
+
+        if (!$this->Memcache->connect($settings['host'], $settings['port']))
+            return false;
+
         return parent::init($config);
     }
 
