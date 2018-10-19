@@ -29,12 +29,12 @@ class PagesController extends AppController
 
         $this->log("");
 
-        $signature = 'sha1=' . hash_hmac('sha1', json_encode($this->request->getData()), "ppgia@2018");
+        $signature = hash_hmac('sha1', json_encode($this->request->getData()), "ppgia@2018");
 
         $git_security = $this->request->getHeader('HTTP_X_HUB_SIGNATURE');
 
-//        if ($signature != $git_security)
-//            throw new UnauthorizedException();
+        if ($signature != $git_security)
+            throw new UnauthorizedException();
 
         $shell = new ShellDispatcher();
         $output = $shell->run(['cron', 'github']);

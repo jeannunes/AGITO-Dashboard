@@ -14,7 +14,8 @@
     "mustache/mustache": "^2.12",
     "php-ai/php-ml": "^0.6.2",
     "ext-memcache": "*",
-    "ext-intl": "*"
+    "ext-intl": "*",
+    "ext-json": "*"
   },
   "require-dev": {
     "cakephp/bake": "^1.1",
