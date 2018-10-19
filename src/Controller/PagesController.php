@@ -35,7 +35,7 @@ class PagesController extends AppController
 //            throw new UnauthorizedException();
 
         $shell = new ShellDispatcher();
-        $output = $shell->run(['cron', 'github']);
+        $output = $shell->run(['cake', 'cron', 'github']);
 
         return $this->response->withStringBody($output);
 

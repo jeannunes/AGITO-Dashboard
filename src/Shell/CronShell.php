@@ -17,7 +17,6 @@ class CronShell extends Shell
     public function github()
     {
         $this->out("Starting github pull...");
-        // Just to make sure it works
         system('git pull origin master', $output);
         $this->out($output);
     }
