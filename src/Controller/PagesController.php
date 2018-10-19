@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Cake\Console\ShellDispatcher;
 use Cake\Http\Exception\UnauthorizedException;
 
 class PagesController extends AppController
@@ -19,24 +20,20 @@ class PagesController extends AppController
     public function updateCode()
     {
 
-        if (!isset($_SERVER['PHP_AUTH_USER'])) {
-            header('WWW-Authenticate: Basic realm="My Realm"');
-            header('HTTP/1.0 401 Unauthorized');
-            echo 'Text to send if user hits Cancel button';
-            exit;
-        } else {
+        $this->log("");
 
-            $username = $this->request->getServerParams()['PHP_AUTH_USER'];
-            $password = $this->request->getServerParams()['PHP_AUTH_PW'];
+        $signature = 'sha1=' . hash_hmac('sha1', json_encode($this->request->getData()), "ppgia@2018");
 
-            if (!($username == 'ppgia' && $password == 'agito'))
-                throw new UnauthorizedException();
+        $git_security = $this->request->getHeader('HTTP_X_HUB_SIGNATURE');
 
-            $output = [];
-            $output['pull'] = exec("git pull origin master");
-            $output['update'] = system('composer update');
-            return $this->response->withStringBody(json_encode($output));
-        }
+        if ($signature != $git_security)
+            throw new UnauthorizedException();
+
+        $shell = new ShellDispatcher();
+        $output = $shell->run(['cron', 'github']);
+
+        return $this->response->withStringBody($output);
+
     }
 
 }
