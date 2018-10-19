@@ -25,7 +25,7 @@ class CronCommand extends Command
     protected function buildOptionParser(ConsoleOptionParser $parser)
     {
         $parser->addArgument('cmd', [
-            'help' => 'What is your name'
+            'help' => 'Which command would you like to execute?'
         ]);
         return $parser;
     }
@@ -34,8 +34,7 @@ class CronCommand extends Command
     {
         $io->info("Iniciando a execução do script...");
         $cmd = $args->getArgument('cmd');
-        if (method_exists($this, $cmd)) {
-
+        if (strlen($cmd) > 0 && method_exists($this, $cmd)) {
             $io->out("Iniciando script ${cmd}...");
             $this->$cmd($args, $io);
         } else {
