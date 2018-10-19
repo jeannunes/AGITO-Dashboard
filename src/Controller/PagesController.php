@@ -3,10 +3,17 @@
 namespace App\Controller;
 
 use Cake\Console\ShellDispatcher;
+use Cake\Event\Event;
 use Cake\Http\Exception\UnauthorizedException;
 
 class PagesController extends AppController
 {
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Security->setConfig('unlockedActions', ['updateCode']);
+        return parent::beforeFilter($event);
+    }
 
     public function index()
     {
